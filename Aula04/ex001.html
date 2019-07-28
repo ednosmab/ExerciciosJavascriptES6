@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        html, body{margin: 0; padding: 0;}
+        body{
+            width: 100%;
+            background: rgb(180, 123, 233);
+            color: white;
+            font-size: 20pt;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                margin-top: 0;
+                background-color: rgb(93, 35, 146);
+            }
+            p{
+                margin-left: 5%;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">Olá, <span id="texto"></span>!</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        let nome
+        window.alert('Olá mundo!\nMeu Primeiro Programa ;)')//Exibe um alerta e aparece antes de exibir o conteúdo do site
+        window.confirm('Está gostando de javascript?') //Caixa contendo OK ou Cancelar  
+        nome = window.prompt('Qual é o seu nome') //Interação com entrada de dados
+        
+        //Trecho a seguir, é de minha autoria, não pertence a aula, 
+        //é apena um inclemento que achei interessante inserir
+        if(nome){
+        document.getElementById('texto').innerHTML = nome
+        }else{
+            nome = 'mundo'
+            document.getElementById('texto').innerHTML = nome
+        }
+    </script>
+</body>
+</html>

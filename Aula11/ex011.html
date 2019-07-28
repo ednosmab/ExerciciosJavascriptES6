@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        html, body{margin: 0;}
+        body{
+            background-color:indigo; 
+            color: white;
+            font: normal 15pt arial;
+        }
+        h1{font-size: 35pt;}
+        h2{font-size: 25pt;}
+        input#pais{width: 110px;}
+    </style>
+    <title>Condições Simpres</title>
+</head>
+<body>
+    <header>
+        <h1>País</h1>
+        <h2>Em qual país você nasceu?</h2>
+        País: 
+        <input id="pais" type="text">
+        <input type="button" value="Verificar" onclick="verificar()"/>
+        <div id="res"></div>
+        <script>
+            function verificar(){
+                var p = document.querySelector("input#pais")
+                var res = document.querySelector("div#res")
+                
+                if(p.value == 'brasil'){
+                    res.innerHTML = 'Você é Brasileiro'
+                }else{
+                    res.innerHTML = 'Você é estrangeiro'
+                }
+            }
+        </script>
+    </header>
+</body>
+</html>

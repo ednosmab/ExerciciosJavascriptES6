@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operadores Aritméticos</title>
+    <script>
+        function capturar(){    
+            var som1 = Number(form.soma1.value)
+            var som2 = Number(form.soma2.value)
+            var resultsom = som1 + som2
+            document.getElementById("resultSoma").value = resultsom
+
+            var sub1 = form.subt1.value
+            var sub2 = form.subt2.value
+            var resultsub = Number(sub1) - Number(sub2)
+            document.getElementById("resultSub").value = resultsub
+
+            var mult1 = Number(form.mult1.value)
+            var mult2 = Number(form.mult2.value)
+            var resultmult = mult1 * mult2
+            document.getElementById("resultMult").value = resultmult
+
+            var div1 = Number(form.div1.value)
+            var div2 = Number(form.div2.value)
+            var resultdiv = div1 / div2
+            document.getElementById("resultDiv").value = resultdiv
+
+            var exp1 = Number(form.exp1.value)
+            var exp2 = Number(form.exp2.value)
+            var resultexp = exp1 ** exp2
+            document.getElementById("resultExpo").value = resultexp
+
+            var mod1 = Number(form.mod1.value)
+            var mod2 = Number(form.mod2.value)
+            var resultmod = mod1 % mod2
+            document.getElementById("resultMod").value = resultmod
+        }
+    </script>
+</head>
+<body>
+    <form name="form" action="ex001.html">
+        Soma: <br/>
+        <input id="soma1" name="soma1" type="text"/>
+        <input id="soma2" name="soma2" type="text"/>
+        Resultado:
+        <input type="text" id="resultSoma"/>
+        <br/>
+        Subtração: <br/>
+        <input id="subt1" type="text"/>
+        <input id="subt2" type="text"/>
+        Resultado:
+        <input id="resultSub" type="text"/>
+        <br/>
+        Multiplicação: <br/>
+        <input id="mult1" type="text"/>
+        <input id="mult2" type="text"/>
+        Resultado:
+        <input id="resultMult" type="text"/>
+        <br/>
+        Divisão: <br/>
+        <input id="div1" type="text"/>
+        <input id="div2" type="text"/>
+        Resultado:
+        <input id="resultDiv" type="text"/>
+        <br/>
+        Exponenciação: <br/>
+        <input id="exp1" type="text"/>
+        <input id="exp2" type="text"/>
+        Resultado:
+        <input id="resultExpo" type="text"/>
+        <br/>
+        Modulo: <br/>
+        <input id="mod1" type="text"/>
+        <input id="mod2" type="text"/>
+        Resultado:
+        <input id="resultMod" type="text"/>
+        <br/>
+        <input type="button" value="Enviar" onclick="capturar()"/><!--Essa Type="button", não envia o formulário
+        porém executa a função do onclick-->
+    </form>
+    <p>
+        <pre>
+            Para Expressão Aritmética a ordem dos fatores implica no resultado, da mesma forma na 
+            matemática deve separar a exressão por parenteses, colchetes e chaves, para que o resultado 
+            seja o esperado.
+            Ex: 10+10/20*2-2+1**2 = 10
+            O resultado esperado seria: 10+[(10/20)*2]-2+(1**2) = 100
+        </pre>
+    </p>
+</body>
+</html>

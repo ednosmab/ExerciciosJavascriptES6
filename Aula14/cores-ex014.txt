@@ -1,0 +1,11 @@
+menino: #00BFFF
+menina: #FF69B4
+
+adolescente masc: 1E90FF
+adolescente fem: #FF1493
+
+homem: #4169E1
+mulher: #DC143C
+
+idoso: #4682B4
+idosa: #CD5C5C

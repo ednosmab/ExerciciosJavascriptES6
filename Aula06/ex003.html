@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        html, body{margin: 0; padding: 0;}
+        body{
+            width: 100%;
+            background: rgb(180, 123, 233);
+            color: white;
+            font-size: 20pt;
+            font-weight: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+            h1{
+                margin-top: 0;
+                background-color: rgb(93, 35, 146);/*Comentário em CSS*/
+            }
+            p{
+                margin-left: 5%;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center">Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p> <!--Comentário em HTML-->
+    <script>
+        //Primeira forma de conversão de tipo primitivo de string p/ number
+        //Problema quando surge um number float
+        /*
+        var num1 = Number.parseInt(window.prompt('Digite um número'))
+        var num2 = Number.parseInt(window.prompt('Digite outro número'))
+        */
+       
+        //Seunda forma conversão de tipo primitivo de string p/ number
+        //Aqui o sistema reconhece automaticamente o tipo númerico
+        var num1 = Number(window.prompt('Digite um número'))
+        var num2 = Number(window.prompt('Digite outro número'))
+        
+        //var soma = num1.toString() + num2.toString()//Retirando .toString(), os números voltam ao tipo primitivo number
+        var soma = num1 + num2
+        window.alert(`A soma entre ${num1} e ${num2} é igual a ${soma}`)
+        /*
+        //Para converter de número para string
+        //Primeira foram
+        var num1 = String(window.prompt('Digite um número'))
+        var num2 = String(window.prompt('Digite outro número'))
+
+        //Segunda forma
+        num1.toString
+        num2.toString
+        */
+    </script>
+</body>
+</html>

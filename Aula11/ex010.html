@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        html, body{margin: 0;}
+        body{
+            background:rgb(90, 148, 206);
+            font-size: 18pt;
+            font-weight: normal;
+            color: white;
+            }
+            input#vel{
+                width: 50px;
+            }
+    </style>
+    <title>Condições Simples</title>
+</head>
+<body>
+    <h1>Detran</h1>
+    <h3>Sistema de Multas</h3>
+    Velocidade do carro:
+    <input id="vel" type="number" name="textvel"/> km/h
+    <input type="button" value="Verificar" onclick="calcular()"/>
+    <div id="res"></div>
+    <script>
+        function calcular(){
+            var txtv = document.querySelector('input#vel')
+            var res = document.querySelector('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}</strong></p>`
+            if(res > 60){
+                res.innerHTML += `<p>Você está acima da velocidade permitida</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com sinto de segurança</p>`
+        }
+    </script>
+</body>
+</html>

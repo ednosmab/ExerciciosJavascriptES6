@@ -1,0 +1,36 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: white;
+    font-weight: normal;
+}
+#center{
+    clear: both;
+    width: 450px;
+    height: 30vw;
+    margin: auto;
+    margin-top: 40px;
+    color: black;
+    background-color: #fefff1;
+    font-size: 15pt;
+    border-radius: 20px;
+    box-shadow: 3px 4px 6px black;
+}
+
+div{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+h1{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 250px;
+    text-align: center;
+}
+#footer{
+    text-align: center;
+    font-size: 12pt;
+}
